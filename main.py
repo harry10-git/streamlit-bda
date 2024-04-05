@@ -35,7 +35,7 @@ def main():
             submission.comments.replace_more(limit=None)
             all_comments = submission.comments.list()
             
-            comments = all_comments[-10:]
+            comments = all_comments[-20:]
 
             # Perform sentiment analysis and store results
             sentiments = [analyze_sentiment(comment.body) for comment in comments]
